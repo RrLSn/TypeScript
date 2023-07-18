@@ -1,0 +1,111 @@
+
+// // Number Methods in TypeScript
+
+// toExponential()  Returns the exponential notation in string format 
+
+        const numbers = 123456789;
+        const exponentialString = numbers.toExponential(); // default precision
+        console.log(exponentialString); // Output: "1.23456789e+8"
+
+        const newCustomPrecision = 3;
+        const customExponentialString = numbers.toExponential(newCustomPrecision);
+        console.log(customExponentialString); // Output: "1.235e+8"
+
+
+// toFixed()    Returns the fixed-point notation
+
+        const numbe = 3.1415926535;
+        const fixedString = numbe.toFixed(); // default precision
+        console.log(fixedString); // Output: "3"
+
+        const custPrecision = 2;
+        const customFixedString = numbe.toFixed(custPrecision);
+        console.log(customFixedString); // Output: "3.14"
+
+// toLocaleString()     Converts the number into a local specific representation of the number
+
+        const num = 1234567.89;
+        const localString = num.toLocaleString(); // Default locale formatting
+        console.log(localString); // Output: "1,234,567.89"
+
+        const customLocale = "de-DE"; // German locale
+        const customLocalString = num.toLocaleString(customLocale);
+        console.log(customLocalString); // Output: "1.234.567,89"
+
+// toPrecision()    Returns the string representation in exponential or fixed-point to the specifies precision
+
+        const number = 3.1415926535;
+        const precisionString = number.toPrecision(); // default precision
+        console.log(precisionString); // Output: "3.1415926535"
+
+        const customPrecision = 4;
+        const customPrecisionString = number.toPrecision(customPrecision);
+        console.log(customPrecisionString); // Output: "3.142"
+
+// toString()   Returns the string representation of the number in the specified base
+
+        const newnum = 42;
+        const numberString = newnum.toString();
+        console.log(numberString); // Output: "42"
+
+        const boolean = true;
+        const booleanString = boolean.toString();
+        console.log(booleanString); // Output: "true"
+
+        const string = "Hello, world!";
+        const stringString = string.toString();
+        console.log(stringString); // Output: "Hello, world!"
+
+        const array = [1, 2, 3];
+        const arrayString = array.toString();
+        console.log(arrayString); // Output: "1,2,3"
+
+        const object = { key: "value" };
+        const objectString = object.toString();
+        console.log(objectString); // Output: "[object Object]"
+
+// valueOf()  Returns the primitive value of the number
+
+        const Numbers = new Number(42);
+        console.log(Numbers.valueOf()); // 42
+
+
+// String Methods in TypeScript
+
+// charAt()   Returns the character at the given index
+
+        const greet = "Hello, World!";
+        console.log(greet.charAt(0)); // "H"
+        console.log(greet.charAt(4)); // "o"
+        console.log(greet.charAt(7)); // "W"
+        console.log(greet.charAt(12)); // "d"
+        console.log(greet.charAt(13)); // "!" (last character)
+        console.log(greet.charAt(20)); // "" (out of range)
+
+// concat() Returns a combimnation of the two or more specified strings
+
+        const str1 = "Hello";
+        const str2 = "World";
+        const str3 = "!";
+        const result1 = str1.concat(" ", str2, str3);
+        console.log(result1); // "Hello World!"
+        const result2 = str1.concat(" ").concat(str2).concat(str3);
+        console.log(result2); // "Hello World!"
+
+// indexOf() Returns an index of the first occurrence of the specified substring from the string (-1 if not found)
+
+        const str = "Hello, World!";
+        console.log(str.indexOf("o")); // 4
+        console.log(str.indexOf("l")); // 2 (first occurrence)
+        console.log(str.indexOf("l", 3)); // 3 (starting from index 3)
+        console.log(str.indexOf("x")); // -1 (not found)
+
+        console.log(str.lastIndexOf("o")); // 8
+        console.log(str.lastIndexOf("l")); // 10 (last occurrence)
+        console.log(str.lastIndexOf("l", 9)); // 3 (searching before index 9)
+        console.log(str.lastIndexOf("x")); // -1 (not found)
+
+// replace()   Replaces the matched substring with a new substring
+// split()     splits the string into the substrings and returns an array 
+// toUpperCase() Converts all the characters of the string into upper case
+// toLowerCase()  Converts all the characters of the string into lower case
