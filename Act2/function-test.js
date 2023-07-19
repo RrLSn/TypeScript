@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var functions_1 = require("./functions");
+console.log((0, functions_1.default)(67, 10));
+console.log((0, functions_1.addString)('Afolabi', 'Sodiq'));
+console.log((0, functions_1.addString)('Afolabi'));
+console.log((0, functions_1.uniontype)('hello', 56));
+console.log((0, functions_1.uniontype)('hello', 'world'));
+console.log((0, functions_1.printFormat)('56', 90));
+console.log((0, functions_1.introduction)('hello', 'Ade', 'Sope', 'idowu'));
+console.log((0, functions_1.introduction)('I love', 'Music', 'Art', 'Movie'));

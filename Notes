@@ -106,6 +106,51 @@
         console.log(str.lastIndexOf("x")); // -1 (not found)
 
 // replace()   Replaces the matched substring with a new substring
+
+        const message = "Hello, World!"
+        const new_message = message.replace("Hello", "Hi")
+        console.log(new_message) // Hi, World
+
 // split()     splits the string into the substrings and returns an array 
+
+// string.split(delimiter)
+// - delimiter is optional parameter which specifies what separator should be used for splitting up the original string
+        const sentence = "Hello,how,are,you,today?"
+        const words = sentence.split(",")
+        console.log(words)  // ['Hello', 'how', 'are', 'you', 'today?']
+
+
 // toUpperCase() Converts all the characters of the string into upper case
+
+        var msg = "Hello, World!";
+        var uppercaseMessage = msg.toUpperCase();
+        console.log(uppercaseMessage);  // HELLO, WORLD!
+
+
 // toLowerCase()  Converts all the characters of the string into lower case
+
+var lowercaseMessage = msg.toLowerCase();
+console.log(lowercaseMessage); // hello, world!
+
+
+// Declaring array with the Generic arraytype
+
+let fruitsArray: Array<string> = ["mango", "peaches"]
+
+// Array Methods in TypeScript 
+// pop()  Removes the last element of the array and returns that element
+// push()  Adds new elements to the array and the new array length
+// sort()  Sorts all the element in the array
+// concat() Joins two arrays and returns he combined result
+// indexOf()  Returns the index of the first match of a value in an array (-1 if not found)
+// copyWithin() Copies a sequence of elements within the array
+// fill()   Fills the array with the static value from the provided start index to te end index
+// shift()   Removes and returns the first element in an array
+// unshift() Adds one or more elements to the begining of an array
+// splice()  Adds or removes element from the array
+// includes()  Checks whether the array contains a certain element
+// join()  Joins all elements of the array into a string
+// lastIndexOf() Returns the last index of an element in the array
+// slice()   Extracts a section of the array and returns the new array
+// toString()  Returns a string representation of an array 
+// toLocaleString()  Returns a localized string representation of an array 

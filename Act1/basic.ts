@@ -4,6 +4,7 @@ let myNumber: number = 9
 let myRegex: RegExp = /foo/
 
 const names: string[] = username.split('')
+console.log(names)
 
 //define an array with typescript
 const values: Array<number> = [9]
@@ -45,6 +46,20 @@ myID[50] = 'e'
 myID[60] = 'f'
 
 console.log(myID)
+
+type weekDays = 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday'
+
+type Schedule = Record<weekDays,string>
+
+const schedule: Schedule = {
+    Monday: 'Work',
+    Tuesday: 'Gym',
+    Wednesday: 'Meeting',
+    Thursday: 'Date night',
+    Friday: 'Party'
+}
+
+console.log(schedule)
 
 //define conditionals and expressions with typesript
 if(myID[40] === 'd'){}
