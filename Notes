@@ -154,3 +154,18 @@ let fruitsArray: Array<string> = ["mango", "peaches"]
 // slice()   Extracts a section of the array and returns the new array
 // toString()  Returns a string representation of an array 
 // toLocaleString()  Returns a localized string representation of an array 
+
+
+/*Tuples is a type in typescript. It is a data structure that allows you to store a fixed-size, ordered collection of elements of different types. 
+
+const Tuples: [type1, type2, type3, ..., typeN] = [Value1, value2, value3, ..., valueN]*/
+
+
+const person: [string, number, boolean] = ['Afolabi sodiq', 34, true]
+
+
+//Enum
+// There are three basic types of enum in TypeScript which are the
+// Numeric Enum
+// String Enum
+// Heterogenous Enum
